@@ -1,0 +1,95 @@
+/*zerando a pagina do navegador*/
+*{
+    margin: 0px;
+}
+
+#estrutura{
+    background-color: white; /*cor de fundo*/
+    width: 90%; /*largura*/
+    margin-left: auto;/* margem a esquerda */
+    margin-right: auto;/* margem a direita */
+}
+#estrutura #titulo{
+    background-image: url("../imagens/cafe2.jpg"); /*imagem dentro do titulo*/
+    background-position: -400px - 380px;/*posicao x, y*/
+    color: white;
+    font-size: 15pt;
+    font-family: 'Lucida Sans';
+    padding-top: 10px;/*espacamento no topo*/
+    padding-left: 10px;/*espacamento a esquerda*/
+    height: 350;/*altura do elemento*/
+}
+/*criando uma class no css, chamada titulo*/
+.titulo{
+    margin-top: 400px;
+
+}
+p{
+    text-align: justify;/*paragrafo*/
+    text-indent: 20px;/*recuo de paragrafo*/
+    font-family: century gothic;
+    font-size: 14pt;
+}
+#estrutura #menu ul{
+    padding: 0px;/*espacamento*/
+}
+#estrutura #menu li{
+    /*retira as marcas marcador*/
+    list-style: none;
+    /*alinhar links na horizontal*/
+    display: inline-block;
+    width: 239px;
+    text-align: center;
+    padding: 0px 0px;
+}
+#estrutura #menu a{
+    /*a href*/
+    font-family: arial;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #800;
+    background-color: #ff8;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+}
+#estrutura #menu a:hover{/*passar o mouse sobre o elemento*/
+    background-color: #800;
+    color: white;
+}
+#estrutura #menu a.atual{/*item de menu selecionado*/
+    background-color: #ff9900;
+}
+#estrutura #conteudo h1{
+    font-family: 'Lucida Sans';
+    font-size: 20pt;
+    padding: 10px;
+}
+/*formatacao para o texto*/
+#estrutura #conteudo .textohome{
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+    line-height: 14pt;
+    padding-left: 20px;
+
+}
+#rodape {
+    padding: 20px 0px;
+    font-family: arial;
+    background-color: #800;
+    color: #fff;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+#estrutura #conteudo .imghome img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+#estrutura #conteudo .imghome{text-align: center;}
+
+/*forcando o rodape para baixo*/
+.abaixar{clear: both;}
